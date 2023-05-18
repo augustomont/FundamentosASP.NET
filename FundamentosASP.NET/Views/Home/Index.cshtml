@@ -1,0 +1,18 @@
+﻿<!--Aqui a gente chama a Model no inicio da pagina.
+    Sempre com letra minuscula
+    Só pode ter uma unica model por view
+-->
+@model HomeModel
+
+
+@{
+    ViewData["Title"] = "Página Inicial";
+}
+
+<!--Sempre que for chamar a Model dentro do HTML, deve usar o arroba, e a primeira letra Maiuscula -->
+<div class="text-center">
+    <h1 class="display-4">ASP.NET Core MVC</h1>
+    <h3>Criado por @Model.Nome</h3> <!--Aqui eu usei a model com a extensao Nome-->
+    <p>Aprenda os Fundamentos de ASP.NET Core no padrão MVC.</p>
+    <span>Contato: @Model.Email</span> <!--Aqui eu usei a Model com a extensao Email-->
+</div>
